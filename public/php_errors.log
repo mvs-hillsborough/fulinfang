@@ -1,0 +1,3 @@
+[24-Sep-2016 13:25:22 UTC] PHP Fatal error:  Cannot redeclare class App\Http\Controllers\testHomepageController in /var/www/html/frank/app/Http/Controllers/HomepageController.php on line 11
+[24-Sep-2016 13:25:49 UTC] PHP Fatal error:  Cannot redeclare class App\Http\Controllers\testHomepageController in /var/www/html/frank/app/Http/Controllers/HomepageController.php on line 11
+[03-Oct-2016 07:47:43 UTC] PHP Fatal error:  Class 'Illuminate\Notifications\NotificationServiceProvider' not found in /var/www/html/jeff/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
