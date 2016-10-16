@@ -12,9 +12,6 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, AuthorizesResources, DispatchesJobs, ValidatesRequests;
 
-    public function section1(){
-        return view('section1');
-    }
 
     public function layout(){
         return view('layout');
