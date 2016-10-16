@@ -19,6 +19,9 @@
         "classmap": [
             "database"
         ],
+        "files" : [
+          "app/Utils/CustomerAuth.php"
+        ],
         "psr-4": {
             "App\\": "app/"
         }
