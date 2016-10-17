@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Utils;
+use Illuminate\Support\Facades\DB;
 
 class UtilsCustomerAuth
 {
@@ -10,7 +11,7 @@ class UtilsCustomerAuth
      * Check the username and password
      *
      * @param array [username, password] $authDetails
-     * @return bool
+     * @return bool|array
      */
     public static function check($authDetails)
     {
@@ -46,7 +47,6 @@ class UtilsCustomerAuth
         session_start();
         if ($_SESSION['user_id']) {
             $_SESSION = array();
-            session_destroy();
         }
     }
 
@@ -66,12 +66,14 @@ class UtilsCustomerAuth
     /**
      * Get username
      *
-     * @return string
+     * @return string|bool
      */
     public static function getUserName(){
         session_start();
         if (isset($_SESSION['user_name'])) {
-            return intval($_SESSION['user_name']);
+            return $_SESSION['user_name'];
+        } else {
+            return false;
         }
     }
 

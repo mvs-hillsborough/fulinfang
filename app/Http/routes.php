@@ -28,3 +28,6 @@ Route::get('videoList',function(){
 Route::get('videoPlay',function(){
 	return view('videoPlay');
 });
+
+Route::post('login', "LoginController@login");
+Route::get('logout', "LoginController@logout");

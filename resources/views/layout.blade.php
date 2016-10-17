@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>拂菻坊 英语学习 @yield('title')</title>
+    <title>拂菻坊 英语学习 @yield('title'){{ session('login_status') }}</title>
         <link rel="icon" href="img/favicon.png" type="image/x-icon" />
 
 
@@ -37,6 +37,7 @@
 <body id="page-top" class="index">
  @section('header')
     <!-- Navigation -->
+    <?php $username = \App\Utils\UtilsCustomerAuth::getUserName()?>
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -61,19 +62,22 @@
                     </li>
                     <li class="page-scroll">
                         <a href="#contact">联系我们</a>
-                    </li> 
+                    </li>
+                    @if ($username === false)
                     <li class="page-scroll" id="login">
                         <a href="#" data-toggle="modal" data-target="#login-modal">登录</a>
                     </li> 
                     <li class="page-scroll" id="register">
                         <a href="http://www.fulinfang.com/index.php?act=login&op=register">注册</a>
                     </li>
-                    <li class="page-scroll" id="userIcon" style="display:none">
+                    @else
+                    <li class="page-scroll" id="userIcon">
                         <i class="fa fa-user fa-3x" style="color: white"></i>
                     </li>
-                    <li class="page-scroll" id="user" style="display:none">
-                        <a href="#">游客12345</a>
-                    </li> 
+                    <li class="page-scroll" id="user">
+                        <a href="#">{{$username}}</a>
+                    </li>
+                    @endif
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -101,11 +105,12 @@
         <div class="modal-dialog">
             <div class="loginmodal-container">
                 <h1>登录</h1><br>
-                <!-- <form> -->
+                <form method="post" action="/login">
                     <input type="text" name="user" placeholder="用户名">
                     <input type="password" name="pass" placeholder="密码">
+                    <input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
                     <input type="submit" name="login" class="login loginmodal-submit" id="loginBtn" value="登录">
-                <!-- </form> -->
+                </form>
                 <div class="login-help">
                     <a href="http://www.fulinfang.com/index.php?act=login&op=register">注册</a> - <a href="http://www.fulinfang.com/index.php?act=login&op=forget_password">忘记密码</a>
                 </div>
