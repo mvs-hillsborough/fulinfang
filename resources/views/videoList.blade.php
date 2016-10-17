@@ -1,7 +1,7 @@
 @extends('layout')
 @section('content') 
  <!-- Page Content -->
-    <div class="container" >
+    <div class="container" id="videoPlayContent">
         <div class="row">
             <div class="col-md-3">
                 <p class="lead">课程类别</p>
