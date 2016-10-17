@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Utils;
+
 class UtilsCustomerAuth
 {
 
@@ -48,11 +50,40 @@ class UtilsCustomerAuth
         }
     }
 
+    /**
+     * Get user ID
+     *
+     * @return int
+     */
     public static function getUserId()
     {
         session_start();
         if (isset($_SESSION['user_id'])) {
             return intval($_SESSION['user_id']);
+        }
+    }
+
+    /**
+     * Get username
+     *
+     * @return string
+     */
+    public static function getUserName(){
+        session_start();
+        if (isset($_SESSION['user_name'])) {
+            return intval($_SESSION['user_name']);
+        }
+    }
+
+    /**
+     * Get user email
+     *
+     * @return string
+     */
+    public static function getUserEmail(){
+        session_start();
+        if (isset($_SESSION['user_email'])) {
+            return intval($_SESSION['user_email']);
         }
     }
 }
