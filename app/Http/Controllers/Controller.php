@@ -16,4 +16,12 @@ class Controller extends BaseController
     public function layout(){
         return view('layout');
     }
+
+    public function videoList(){
+    	return view('videoList');
+    }
+
+     public function videoPlay(){
+    	return view('videoPlay');
+    }
 }

@@ -12,10 +12,19 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 
 Route::get('layout',function(){
    return view('layout');
+});
+
+
+Route::get('videoList',function(){
+	return view('videoList');
+});
+
+Route::get('videoPlay',function(){
+	return view('videoPlay');
 });

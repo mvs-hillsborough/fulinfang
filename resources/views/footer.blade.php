@@ -1,4 +1,6 @@
    @section('footer')
+       <div class="container">
+        <hr>
     <footer class="text-center" style="margin-top:500px">
         <div class="footer-below">
             <div class="container">
@@ -10,4 +12,5 @@
             </div>
         </div>
     </footer>
+    </div>
     @show

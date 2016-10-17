@@ -17,7 +17,8 @@
 
     <!-- Theme CSS -->
     <link href="{{ URL::asset('css/freelancer.css') }}" rel="stylesheet">
-    
+    <link href="{{ URL::asset('css/shop-item.css') }}" rel="stylesheet">
+    <link href="css/shop-homepage.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="{{ URL::asset('vendor/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">

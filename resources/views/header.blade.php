@@ -56,7 +56,7 @@
                         <a href="#page-top">主页</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="itemList.html">课程列表</a>
+                        <a href="videoList.blade.php">课程列表</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#contact">联系我们</a>
