@@ -18,7 +18,8 @@
     <!-- Theme CSS -->
     <link href="{{ URL::asset('css/freelancer.css') }}" rel="stylesheet">
     <link href="{{ URL::asset('css/shop-item.css') }}" rel="stylesheet">
-    <link href="css/shop-homepage.css" rel="stylesheet">
+    <link href="{{ URL::asset('css/shop-homepage.css') }}" rel="stylesheet">
+
 
     <!-- Custom Fonts -->
     <link href="{{ URL::asset('vendor/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
@@ -53,10 +54,10 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#page-top">主页</a>
+                        <a href="/">主页</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="itemList.html">课程列表</a>
+                        <a href="videoList">课程列表</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#contact">联系我们</a>
@@ -81,12 +82,10 @@
     </nav>
     @show
 
+    @yield('content')
 
-       @yield('content')
-
-
-     @section('footer')
-         <footer class="text-center">
+    @section('footer')
+    <footer class="text-center">
         <div class="footer-below">
             <div class="container">
                 <div class="row">
@@ -96,8 +95,8 @@
                 </div>
             </div>
         </div>
-    	</footer>
-     @show
+    </footer>
+    @show
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
 
