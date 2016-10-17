@@ -4,10 +4,9 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
-body {
-    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+#videoPlayContent{
+	padding-top: 120px;
 }
-
 .thumbnail img {
     width: 100%;
 }

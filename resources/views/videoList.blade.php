@@ -1,7 +1,7 @@
 @extends('layout')
 @section('content') 
  <!-- Page Content -->
-    <div class="container" id="videoPlayContent">
+    <div class="container" id="videoListContent">
         <div class="row">
             <div class="col-md-3">
                 <p class="lead">课程类别</p>
@@ -54,7 +54,7 @@
                             <img src="img/video1.jpg" alt="">
                             <div class="caption">
                                 <!-- <h4 class="pull-right">$24.99</h4> -->
-                                <h4><a href="item.html">【拂菻坊】瑞典斯德哥尔摩</a>
+                                <h4><a href="videoPlay">【拂菻坊】瑞典斯德哥尔摩</a>
                                 </h4>
                                 <p>说走就走的旅行（欧洲）第一部</p>
                             </div>
@@ -75,7 +75,7 @@
                         <div class="thumbnail">
                             <img src="img/video2.jpg" alt="">
                             <div class="caption"> 
-                                <h4><a href="item.html">【拂菻坊】北京</a>
+                                <h4><a href="videoPlay">【拂菻坊】北京</a>
                                 </h4>
                                 <p>北京Chinglish测试</p>
                             </div>
@@ -96,7 +96,7 @@
                         <div class="thumbnail">
                             <img src="img/video3.jpg" alt="">
                             <div class="caption"> 
-                                <h4><a href="item.html">【拂菻坊】礼物</a>
+                                <h4><a href="videoPlay">【拂菻坊】礼物</a>
                                 </h4>
                                 <p>收到的奇葩礼物</p>
                             </div>
@@ -118,7 +118,7 @@
                             <img src="img/video4.jpg" alt="">
                             <div class="caption">
                                 <h4 style="color: #d35f5f;" class="pull-right">VIP</h4>
-                                <h4><a href="item.html">【拂菻坊】对比</a>
+                                <h4><a href="videoPlay">【拂菻坊】对比</a>
                                 </h4>
                                 <p>中文中应该有的英文WORDS</p>
                             </div>
@@ -140,7 +140,7 @@
                             <img src="img/video5.jpg" alt="">
                             <div class="caption">
                                 <h4 style="color: #d35f5f;"class="pull-right">VIP</h4>
-                                 <h4><a href="item.html">【拂菻坊】国际友人</a>
+                                 <h4><a href="videoPlay">【拂菻坊】国际友人</a>
                                 </h4>
                                 <p></p>
                             </div>
@@ -162,7 +162,7 @@
                             <img src="img/video8.jpg" alt="">
                             <div class="caption">
                                 <h4 style="color: #d35f5f;" class="pull-right">VIP</h4>
-                               <h4><a href="item.html">【拂菻坊】趣味</a>
+                               <h4><a href="videoPlay">【拂菻坊】趣味</a>
                                 </h4>
                                 <p>测测你的Gaydar</p>
                             </div>

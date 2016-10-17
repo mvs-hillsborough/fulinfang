@@ -1,7 +1,7 @@
 @extends('layout')
 @section('content') 
   <!-- Page Content -->
-    <div class="container" >
+    <div class="container" id="videoPlayContent">
 
         <div class="row">
 

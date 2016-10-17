@@ -153,34 +153,5 @@
         </a>
     </div>
 
-    <!--Login Modal-->
-    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-        <div class="modal-dialog">
-            <div class="loginmodal-container">
-                <h1>登录</h1><br>
-                <!-- <form> -->
-                    <input type="text" name="user" placeholder="用户名">
-                    <input type="password" name="pass" placeholder="密码">
-                    <input type="submit" name="login" class="login loginmodal-submit" id="loginBtn" value="登录">
-                <!-- </form> -->
-                <div class="login-help">
-                    <a href="http://www.fulinfang.com/index.php?act=login&op=register">注册</a> - <a href="http://www.fulinfang.com/index.php?act=login&op=forget_password">忘记密码</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!--Subscribe Modal-->
-    <div class="modal fade" id="subscribe-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-        <div class="modal-dialog">
-            <div class="loginmodal-container">
-                <h1>请订阅后观看</h1><br>
-                <!-- <form> -->
-                    <input type="submit" name="login" class="login loginmodal-submit" id="subscribeBtn" value="立即订阅-￥15/每月">
-                <!-- </form> -->
-      
-            </div>
-        </div>
-    </div>
+ 
 @stop
