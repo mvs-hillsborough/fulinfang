@@ -13,13 +13,13 @@
     
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
-    $('.page-scroll a').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: ($($anchor.attr('href')).offset().top - 50)
-        }, 1250, 'easeInOutExpo');
-        event.preventDefault();
-    });
+    // $('.page-scroll a').bind('click', function(event) {
+    //     var $anchor = $(this);
+    //     $('html, body').stop().animate({
+    //         scrollTop: ($($anchor.attr('href')).offset().top - 50)
+    //     }, 1250, 'easeInOutExpo');
+    //     event.preventDefault();
+    // });
 
     // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
@@ -33,11 +33,11 @@
     });
 
     // Offset for Main Navigation
-    $('#mainNav').affix({
-        offset: {
-            top: 100
-        }
-    })
+    // $('#mainNav').affix({
+    //     offset: {
+    //         top: 100
+    //     }
+    // })
 
     // Floating label headings for the contact form
     $(function() {
@@ -50,14 +50,30 @@
         });
     });
 
+    //测试用
+    // $("#login").click(function(){
+    //             $("body").addClass("loading");  
+
+    // })
+
+
     //登录按钮
     $("#loginBtn").click(function(){
-        window.login = true;
-        $("#login-modal").modal("hide");
-        $("#login").hide();
-        $("#register").hide();
-        $("#user").show();
-        $("#userIcon").show();
+        
+        if ($("#user").val() && $("#pass").val()) {
+            window.login = true;
+            $("#formLogin").submit();
+            $("#login-modal").modal("hide");
+            $("#login").hide();
+            $("#register").hide();
+            $("#user").show();
+            $("#userIcon").show();
+            $("body").addClass("loading");  
+        } else{
+            alert("请属于用户名或密码！");
+            return;
+        }
+        
     });
     
     //订阅按钮

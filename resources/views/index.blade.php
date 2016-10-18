@@ -40,7 +40,7 @@
                     </a> 
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                     <a href="item" class="portfolio-link">
+                     <a href="videoPlay" class="portfolio-link">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-play fa-3x"></i>
@@ -52,7 +52,7 @@
 
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                     <a href="item.html" class="portfolio-link">
+                     <a href="videoPlay" class="portfolio-link">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-play fa-3x"></i>
@@ -63,7 +63,7 @@
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                     <a href="item.html" class="portfolio-link">
+                     <a href="videoPlay" class="portfolio-link">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-play fa-3x"></i>
@@ -74,7 +74,7 @@
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                     <a href="item.html" class="portfolio-link">
+                     <a href="videoPlay" class="portfolio-link">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-play fa-3x"></i>
@@ -85,7 +85,7 @@
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="item.html" class="portfolio-link">
+                    <a href="videoPlay" class="portfolio-link">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-play fa-3x"></i>
@@ -153,5 +153,5 @@
         </a>
     </div>
 
- 
+
 @stop

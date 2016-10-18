@@ -71,11 +71,14 @@
                         <a href="http://www.fulinfang.com/index.php?act=login&op=register">注册</a>
                     </li>
                     @else
-                    <li class="page-scroll" id="userIcon">
+               <!--      <li class="page-scroll" id="userIcon">
                         <i class="fa fa-user fa-3x" style="color: white"></i>
-                    </li>
+                    </li> -->
                     <li class="page-scroll" id="user">
                         <a href="#">{{$username}}</a>
+                    </li>
+                    <li id="logOut">
+                        <a href="logout">登出</a>
                     </li>
                     @endif
                 </ul>
@@ -100,16 +103,17 @@
             </div>
         </div>
     </footer>
+
        <!--Login Modal-->
     <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
         <div class="modal-dialog">
             <div class="loginmodal-container">
                 <h1>登录</h1><br>
-                <form method="post" action="/login">
-                    <input type="text" name="user" placeholder="用户名">
-                    <input type="password" name="pass" placeholder="密码">
+                <form method="post" id="formLogin" action="/login">
+                    <input type="text" name="user" id="user" placeholder="用户名">
+                    <input type="password" name="pass" id="pass" placeholder="密码">
                     <input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
-                    <input type="submit" name="login" class="login loginmodal-submit" id="loginBtn" value="登录">
+                    <input type="button" name="login" class="login loginmodal-submit" id="loginBtn" value="登录">
                 </form>
                 <div class="login-help">
                     <a href="http://www.fulinfang.com/index.php?act=login&op=register">注册</a> - <a href="http://www.fulinfang.com/index.php?act=login&op=forget_password">忘记密码</a>
@@ -125,12 +129,15 @@
             <div class="loginmodal-container">
                 <h1>请订阅后观看</h1><br>
                 <!-- <form> -->
-                    <input type="submit" name="login" class="login loginmodal-submit" id="subscribeBtn" value="立即订阅-￥15/每月">
+                    <input type="submit" name="login" class="login loginmodal-submit" id="subscribeBtn" value="立即订阅-￥100/月">
                 <!-- </form> -->
       
             </div>
         </div>
     </div>
+
+    <!--Loading Modal-->
+    <div class="modal1"></div>
     @show
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
