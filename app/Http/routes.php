@@ -25,9 +25,11 @@ Route::get('videoList',function(){
 	return view('videoList');
 });
 
-Route::get('videoPlay',function(){
-	return view('videoPlay');
-});
+// Route::get('videoPlay',function(){
+// 	return view('videoPlay');
+// });
 
 Route::post('login', "LoginController@login");
 Route::get('logout', "LoginController@logout");
+
+Route::get('videoList', 'VideoListController@index');

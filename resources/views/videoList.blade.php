@@ -45,15 +45,37 @@
                             </a>
                         </div>
                     </div>
-
                 </div>
 
+
+
                 <div class="row">
-                    <div class="col-sm-4 col-lg-4 col-md-4 items" id="item1">
-                        <div class="thumbnail">
-                            <img src="img/video1.jpg" alt="">
+                @foreach ($videos as $video)
+                <div class="col-sm-4 col-lg-4 col-md-4 items" id="video{{$video->id}}">
+                    <div class="thumbnail">
+                        <img src="{{$video->img}}" alt="">
                             <div class="caption">
                                 <!-- <h4 class="pull-right">$24.99</h4> -->
+                                <p><a href="videoPlay">【拂菻坊】{{$video->name}}</a></p>
+                                <small>{{$video->subtitle}}</small>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">15 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+                  <!--   <div class="col-sm-4 col-lg-4 col-md-4 items" id="item1">
+                        <div class="thumbnail">
+                            <img src="img/video1.jpg" alt="">
+                            <div class="caption"> 
                                 <h4><a href="videoPlay">【拂菻坊】瑞典斯德哥尔摩</a>
                                 </h4>
                                 <p>说走就走的旅行（欧洲）第一部</p>
@@ -178,7 +200,7 @@
                             </div>
                         </div>
                     </div>
-
+ -->
                 </div>
 
             </div>

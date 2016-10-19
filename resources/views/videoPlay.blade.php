@@ -18,7 +18,7 @@
             <div class="col-md-9">
 
                 <div class="thumbnail">
-                 <iframe width="100%" height="400" src="https://www.youtube.com/embed/IzKtA7fptys">
+                 <iframe width="100%" height="400" src="https://www.7xvypf.com1.zO.glb.clouddn.com/chrisieltssex.MP4">
                 </iframe>
                     <div class="caption-full"> 
                         <h4><a href="#">【拂菻坊】</a>
