@@ -6,10 +6,10 @@
             <div class="col-md-3">
                 <p class="lead">课程类别</p>
                 <div class="list-group">
-                    <a href="#" id="all" class="list-group-item">全部</a>
-                    <a href="#" id="beginner" class="list-group-item">初级</a>
-                    <a href="#" id="intermidiate" class="list-group-item">中级</a>
-                    <a href="#" id="advanced" class="list-group-item">进阶</a>
+                    <a href="videoList" id="all" class="list-group-item">全部</a>
+                    <a href="beginner" id="beginner" class="list-group-item">初级</a>
+                    <a href="intermidiate" id="intermidiate" class="list-group-item">中级</a>
+                    <a href="advance" id="advanced" class="list-group-item">进阶</a>
                 </div>
             </div>
 
@@ -53,20 +53,16 @@
                 @foreach ($videos as $video)
                 <div class="col-sm-4 col-lg-4 col-md-4 items" id="video{{$video->id}}">
                     <div class="thumbnail">
-                        <img src="{{$video->img}}" alt="">
+                        <img src="img/{{$video->img}}" alt="">
                             <div class="caption">
                                 <!-- <h4 class="pull-right">$24.99</h4> -->
-                                <p><a href="videoPlay">【拂菻坊】{{$video->name}}</a></p>
-                                <small>{{$video->subtitle}}</small>
+                                <p><a href="{{$video->id}}">【拂菻坊】{{$video->name}}</a></p>
+                                <!-- <small>{{$video->subtitle}}</small> -->
                             </div>
                             <div class="ratings">
-                                <p class="pull-right">15 reviews</p>
+                                <small class="pull-right" style="margin-top:3%">最近观看:{{$video->recent_view}}</small>
                                 <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
+                                    {{$video->course_level}}
                                 </p>
                             </div>
                         </div>

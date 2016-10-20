@@ -22,6 +22,30 @@ class VideoListController extends Controller
         return view('videoList',['videos' => $videos]);
 	}
 
+	//初级教程
+	public function beginner(){
+		$videos = VideoList::where('course_level', '初级')
+					->get();
+
+		return view('videoList',['videos' => $videos]);
+	}
+
+	//中级教程
+	public function intermidiate(){
+		$videos = VideoList::where('course_level', '中级')
+					->get();
+
+		return view('videoList',['videos' => $videos]);
+	}
+	//高级教程
+	public function advance(){
+		$videos = VideoList::where('course_level', '高级')
+					->get();
+
+		return view('videoList',['videos' => $videos]);
+	}
+
+
 	//add new videos to page 
 	protected function add()
 	{
@@ -31,6 +55,6 @@ class VideoListController extends Controller
 	//delete videos on page 
 	protected function delete()
 	{
-		
+
 	}
 }

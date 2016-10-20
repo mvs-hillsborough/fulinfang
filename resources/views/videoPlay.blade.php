@@ -5,39 +5,24 @@
 
         <div class="row">
 
-            <div class="col-md-3">
-                  <p class="lead">课程类别</p>
-                <div class="list-group">
-                    <a href="#" class="list-group-item">全部</a>
-                    <a href="#" class="list-group-item">初级</a>
-                    <a href="#" class="list-group-item">中级</a>
-                    <a href="#" class="list-group-item">进阶</a>
-                </div>
-            </div>
-
             <div class="col-md-9">
 
                 <div class="thumbnail">
-                 <iframe width="100%" height="400" src="https://www.7xvypf.com1.zO.glb.clouddn.com/chrisieltssex.MP4">
+                 <iframe width="100%" height="400" src="{{$video->url}}">
                 </iframe>
                     <div class="caption-full"> 
                         <h4><a href="#">【拂菻坊】</a>
                         </h4>
-                        <p>你应该学习哪个英国方言？</p>
+                        <p>{{$video->name}}</p>
                         <!-- <p>Want to make these reviews work? Check out
                             <strong><a href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">this building a review system tutorial</a>
                             </strong>over at maxoffsky.com!</p> -->
-                        <p>觉得英语口音只分国家？觉得每个英国人都是一口伦敦腔？那你就错啦！让芳芳带你看看英国各个地方的方言吧。</p>
+                        <p>{{$video->subtitle}}</p>
                     </div>
                     <div class="ratings">
-                        <p class="pull-right">3 reviews</p>
+                        <!-- <p class="pull-right">{{$video->recent_view}}</p> -->
                         <p>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            4.0 stars
+                        最近观看：{{$video->recent_view}}
                         </p>
                     </div>
                 </div>
