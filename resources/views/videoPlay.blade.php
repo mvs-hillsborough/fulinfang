@@ -8,7 +8,7 @@
             <div class="col-md-9">
 
                 <div class="thumbnail">
-                 <iframe width="100%" height="400" src="{{$video->url}}">
+                 <iframe width="100%" height="400" src="{{$video->url}}" allowfullscreen>
                 </iframe>
                     <div class="caption-full"> 
                         <h4><a href="#">【拂菻坊】</a>

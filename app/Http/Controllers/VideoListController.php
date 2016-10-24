@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+// use App\Utils\Utils
 use Illuminate\Http\Request;
+
+
 
 use App\Http\Requests;
 
@@ -19,7 +22,9 @@ class VideoListController extends Controller
     public function index()
     {
     	$videos = VideoList::all();
-        return view('videoList',['videos' => $videos]);
+      	// $originalUrl  = "7xvypf.com1.z0.glb.clouddn.com/chrisieltssex.MP4";
+		// $encodedUrl = UtilsHashUrl::privateDownloadUrl($originalUrl);
+		  return view('videoList',['videos' => $videos]);
 	}
 
 	//初级教程
@@ -44,7 +49,6 @@ class VideoListController extends Controller
 
 		return view('videoList',['videos' => $videos]);
 	}
-
 
 	//add new videos to page 
 	protected function add()
